@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="priority_names">
+        <item>PRIORITY_DEFAULT</item>
+        <item>PRIORITY_HIGH</item>
+        <item>PRIORITY_LOW</item>
+        <item>PRIORITY_MAX</item>
+        <item>PRIORITY_MIN</item>
+    </string-array>
+    <integer-array name="priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+        <item>2</item>
+        <item>-2</item>
+    </integer-array>
+</resources>

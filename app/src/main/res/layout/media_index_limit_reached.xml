@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:id="@+id/parentLayout"
+    android:clickable="true"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/divider_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/horizontal_popup_separator_blue" />
+
+        <ImageView
+            android:id="@+id/img_popup_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/popup_background" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/media_index_limit_reached_pop_up_close"
+        android:layout_width="86dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="705dp"
+        android:background="@drawable/close_icon"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="632dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="GMSansUI-Light"
+        android:text="@string/audio_indexing_limit_reached"
+        android:textColor="#ffffff"
+        android:textSize="31sp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="632dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="59dp"
+        android:fontFamily="GMSansUI-Regular"
+        android:text="@string/audio_remove_a_device_to_continue"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nkattavenkat.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/flagnewtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flag New Task"
+        android:layout_marginStart="7dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/settings_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings Action"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/flagnewtask"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/settings_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings Class"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/flagnewtask"
+        app:layout_constraintLeft_toRightOf="@+id/settings_action"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/trigger_log"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trigger log"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/settings_action" />
+
+    <Button
+        android:id="@+id/crash_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crash Me"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/trigger_log" />
+
+    <Button
+        android:id="@+id/trigger_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trigger notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Spinner
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/priority_names"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintTop_toBottomOf="@+id/crash_me" />
+
+    <EditText
+        android:id="@+id/notif_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/priority"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/crash_me"
+        app:layout_constraintHorizontal_bias="0.505" />
+
+
+</android.support.constraint.ConstraintLayout>
